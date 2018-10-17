@@ -1,0 +1,653 @@
+/*
+	Theme Name: wwwsanyangtheme
+	Author: Pa Sanyang
+	Contact: iamsanyang@gmail.com
+*/
+
+
+@font-face {
+	font-family: abel;
+	src: url("../fonts/Abel-Regular.ttf");
+}
+
+@font-face {
+	font-family: permanentmarker;
+	src: url("../fonts/PermanentMarker.ttf");
+}
+
+@font-face {
+	font-family: socialnetwork;
+	src: url("../fonts/socialnetwork.ttf");
+}
+
+@font-face {
+	font-family: oswald;
+	src: url("../fonts/Oswald/Oswald-Light.ttf");
+}
+
+@font-face {
+	font-family: atomicage;
+	src: url("../fonts/AtomicAge-Regular.ttf");
+}
+
+@font-face {
+	font-family: opensanscondensed;
+	src: url("../fonts/OpenSansCondensed-Light.ttf");
+}
+
+@font-face {
+	font-family: marketdeco;
+	src: url("../fonts/marketdeco.ttf");
+}
+
+@font-face {
+	font-family: talldark;
+	src: url("../fonts/talldark.ttf");
+}
+
+
+@font-face {
+	font-family: monofonto;
+	src: url("../fonts/monofonto.ttf");
+}
+
+@font-face {
+	font-family: icons; 
+	src: url("--/fonts/flaticon.ttf");
+}
+
+html {
+	height: 100%;
+	background-color: white;
+	background-image: url('../img/white-background.jpeg');
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-position: center top;
+	background-size: cover;
+}
+
+.wrap-content {
+	width: 1240px !important;
+}
+
+/***************************************************************
+****************************************************************
+************* Google Maps Api
+****************************************************************
+****************************************************************/
+
+.map-container {
+	position: relative;
+	top: 100px;
+	width: 100%;
+	height: auto;
+}
+
+.map-title {
+	display: block
+	height: 2.5rem;
+	padding: 10px;
+	width: 100%;
+	margin: auto;
+}
+
+.map-title span {
+	font-family: abel;
+	font-size: 2.5rem;
+	color: black;
+}
+
+#map {
+	position: relative;
+	height: 500px;
+	width: 100%;
+	margin: auto;
+}
+
+/***************************************************************
+****************************************************************
+************* Header
+****************************************************************
+****************************************************************/
+
+.header-rs {
+	display: none;
+}
+
+header {
+	position: fixed;
+	top: 0px;
+	width: 100%;
+	height: 100px;
+	z-index: 100;
+	background: -webkit-gradient(linear,left bottom,left top,color-stop(0.0,rgba(245, 245, 245, 1)),color-stop(1,rgba(255,255,255, 1)));
+}
+
+header nav ul,
+header nav ul li {
+	list-style: none;
+	height: inherit;
+}
+
+header nav {
+	position: relative;
+	display: block;
+	margin: auto;
+	height: inherit;
+	background-color: transparent;
+}
+
+header nav .header-name-logo {
+	display: inline-block;
+	float: left;
+	background-color: transparent;
+	height: inherit;
+	margin-left: 80px;
+}
+
+.header-name-logo span {
+	font-size: 2em;
+	font-family: oswald;
+	letter-spacing: 0.2em;
+	position: relative;
+	top: 30px;
+	text-shadow: 0px 0px 3px #4c4c4c;
+}
+
+header nav ul {
+	display: inline-block;
+	float: right;
+	margin-right: 80px;
+	background-color: transparent;
+}
+
+header nav ul li {
+	float: right;
+	padding-left: 40px;
+	width: auto;
+	display: block;
+	background-color: transparent;
+}
+
+header nav ul li a {
+	text-decoration: none;
+	color: black;
+	transition: 0.3s ease-in-out;
+}
+
+header nav ul li a:hover {
+	color: white;
+	text-shadow: 0px 0px 3px #ffffff;
+}
+
+header nav ul li span {
+	position: relative;
+	top: 40px;
+	font-family: abel;
+	font-weight: bold;
+	font-size: 1.2rem;
+	letter-spacing: 0.05em;
+}
+
+header nav ul li i {
+	
+}
+
+
+
+/***************************************************************
+****************************************************************
+************* Index
+****************************************************************
+****************************************************************/
+
+#first-container-index {
+	position: relative;
+	top: 100px;
+	width: 100%;
+	height: 700px;
+	background-color: white;
+	background-position: center center;
+	background-size: cover;
+	z-index: 1;
+	overflow: hidden;
+}
+
+.image-slide-content {
+	position: relative;
+	display: block;
+	margin: auto;
+	overflow: hidden;
+	height: auto;
+	width: auto;
+}
+
+.image-slide-content img {
+	display: block;
+	margin: auto;
+	transition: 0.4s ease-in-out;
+	opacity: 1.0;
+}
+
+
+/***************************************************************
+****************************************************************
+************* Galleri
+****************************************************************
+****************************************************************/
+
+.grid {
+    position: relative;
+    top: 110px;
+    float: left;
+    width:100%;
+    height: auto;
+    padding-bottom: 50px;
+}
+.grid-item { 
+    width: 19%; 
+    margin: 0.5%;
+}
+.grid-item img { 
+    display: block;
+	transition: all 200ms ease-in-out; 
+    -webkit-transition: all 200ms ease-in-out; 
+    -o-transition:  all 200ms ease-in-out;
+}
+.grid-item img:hover{
+    opacity: 0.4;
+}
+
+/***************************************************************
+****************************************************************
+************* Service
+****************************************************************
+****************************************************************/
+
+#first-container-service {
+	padding-top: 100px;
+	position: relative;
+	top: 100px;
+	width: 100%;
+	height: auto;
+	padding-bottom: 400px;
+	background-color: transparent;
+/* 	background-image: url('../img/white-paper-texture.jpg'); */
+	z-index: 1;
+	overflow: hidden;
+}
+
+#service-price-container {
+	background-color: transparent;
+	height: auto;
+	margin: auto;
+}
+
+#service-price-title {
+	display: block;
+	height: auto;
+	padding: 15px 0px 15px 10px;
+	background-color: transparent;
+	margin-bottom: 60;
+}
+
+#service-price-title span {
+	font-family: abel;
+	font-size: 3.2rem;
+	text-shadow: 0px 0px 3px #4c4c4c;
+	position: relative;
+	top: 25px;
+	word-break: break-word;
+}
+
+.service-price-list {
+	display: block;
+	margin-bottom: 50px;
+}
+
+.service-price-list ul {
+	display: block;
+	background-color: white;
+	height: 70px;
+	-moz-box-shadow: 0px 0px 24px -8px rgba(0,0,0,0.75);
+	-webkit-box-shadow: 0px 0px 24px -8px rgba(0,0,0,0.75);
+	box-shadow: 0px 0px 24px -8px rgba(0,0,0,0.75);
+}
+
+.service-price-list ul li {
+	list-style: none;
+	float: left;
+}
+
+.service-price-list .first-column {
+	width: 60%;
+}
+
+.service-price-list .second-column {
+	width: 40%;
+}
+
+.service-price-list ul li span {
+	font-family: abel;
+	font-size: 2rem;
+	position: relative;
+	top: 20px;
+	padding-left: 10px;
+}
+
+.service-price-text {
+	padding-left: 10px;
+}
+
+.service-price-text span {
+	font-family: abel;
+	font-size: 2rem;
+	position: relative;
+	word-break: break-word;
+}
+
+
+/***************************************************************
+****************************************************************
+************* About us
+****************************************************************
+****************************************************************/
+
+#first-container-about {
+	position: relative;
+	top: 100px;
+	width: 100%;
+	height: auto;
+	padding-top: 100px;
+	padding-bottom: 200px; 
+	background-color: transparent;
+/* 	background-image: url('../img/white-paper-texture.jpg'); */
+	z-index: 1;
+	overflow: hidden;
+}
+
+.about-us-container-title {
+	position: relative;
+	display: block;
+	margin: 0 auto 100px;
+	height: auto;
+	background-color: transparent;
+	padding: 0.5rem 0;
+}
+
+.about-us-container-title span {
+	padding: 0.5rem;
+	font-family: abel;
+	color: black;	
+	font-size: 3.5rem;
+	font-weight: bold;
+}
+
+.about-us-content {
+	position: relative;
+	display: block;
+	margin: 0 auto 50px;
+	height: auto;
+	background-color: white;
+	border-bottom: 1px solid transparent;
+	-moz-box-shadow: 0px 0px 5px white;
+	-webkit-box-shadow: 0px 0px 5px white;
+	box-shadow: 0px 0px 5px white;
+}
+
+.about-us-title {
+	background-color: transparent;
+	padding: 0.5rem;
+}
+
+.about-us-text {
+	background-color: transparent;
+	padding: 0.5rem;
+}
+
+.about-us-title span,
+.about-us-text span {
+	font-family: abel;
+	color: black;
+}
+
+.about-us-title span {
+	font-size: 2.3rem;
+	font-weight: bold;
+}
+
+.about-us-text span {
+	font-size: 1.5rem;
+	line-height: 2rem;
+}
+
+/***************************************************************
+****************************************************************
+************* Contact
+****************************************************************
+****************************************************************/
+
+#first-container-contact {
+	position: relative;
+	top: 100px;
+	width: 100%;
+	height: auto;
+	padding-top: 100px;
+	padding-bottom: 100px;
+	background-color: transparent;
+/* 	background-image: url('../img/white-paper-texture.jpg'); */
+	z-index: 1;
+	overflow: hidden;
+}
+
+#contact-detail-container {
+	background-color: transparent;
+	position: relative;
+	height: auto;
+	display: block;
+	padding: 50px 0px;
+	margin: auto;
+}
+
+#contact-info-content {
+	background-color: transparent;
+	display: inline-block;
+	width: 40%;
+	height: 400px;
+	float: left;
+}
+
+#contact-info-content ul {
+	padding: 25px 30px;
+}
+
+#contact-info-content ul li {
+	list-style: none;
+	font-family: abel;
+	background-color: transparent;
+	margin-bottom: 10px;
+	padding: 5px 5px 5px 50px;
+}
+
+#contact-info-content ul li a {
+	text-decoration: none;
+	color: black;
+}
+
+ul .contact-info-list {
+	font-size: 1rem;
+}
+
+ul .open-time-title {
+	display: block;
+	margin-top: 50px !important;
+	font-size: 2rem;
+	font-weight: bold;
+}
+
+ul .open-time-wd {
+	font-size: 1rem;
+}
+
+#contact-info-content ul li span {
+	font-family: abel;
+}
+
+#contact-form-content {
+	background-color: transparent;
+	display: inline-block;
+	width: 60%;
+	height: auto;
+	position: relative;
+}
+
+#contact-form-content form {
+	background-color: transparent;
+	display: inline-block;
+	padding: 25px 30px;
+	width: auto;
+}
+
+#contact-form-content form input,
+#contact-form-content form textarea {
+	margin-bottom: 15px;
+	outline: none;
+	font-family: abel;
+	font-size: 1.2rem;
+	border: none;
+	padding-left: 1rem;
+	-moz-box-shadow: 0px 0px 24px -8px rgba(0,0,0,0.75);
+	-webkit-box-shadow: 0px 0px 24px -8px rgba(0,0,0,0.75);
+	box-shadow: 0px 0px 24px -8px rgba(0,0,0,0.75);
+}
+
+#contact-form-content form input {
+	height: 46px;
+	width: 600px;
+}
+
+#contact-form-content form textarea {
+	max-width: 600px;
+	min-width: 600px;
+	min-height: 250px;
+	max-height: 250px;
+	
+}
+
+#contact-form-content button {
+	background-color: white;
+	color: black;
+	height: 46px;
+	width: 600px;
+	border-radius: 2px;
+	border: none;
+	cursor: pointer;
+	transition: 0.4s ease-in-out;
+	-moz-box-shadow: 0px 0px 24px -8px rgba(0,0,0,0.75);
+	-webkit-box-shadow: 0px 0px 24px -8px rgba(0,0,0,0.75);
+	box-shadow: 0px 0px 24px -8px rgba(0,0,0,0.75);
+	outline: none;
+}
+
+#contact-form-content button span {
+	font-family: abel;
+	font-size: 1.4rem;
+	font-style: normal;
+}
+
+#contact-form-content button:hover {
+	background-color: black;
+	color: white;
+	text-shadow: 0px 0px 3px white;
+}
+
+
+
+
+
+/***************************************************************
+****************************************************************
+************* Footer
+****************************************************************
+****************************************************************/
+
+footer {
+	position: relative;
+	top: 100px;
+	clear: both;
+	width: 100%;
+	height: 200px;
+	background: -webkit-gradient(linear,left bottom,left top,color-stop(0.0,rgba(0, 0, 0, 0.8)),color-stop(1,rgba(0,0,0, 0.8)));
+	z-index: 2;
+}
+
+footer .footer-content {
+	display: block;
+	position: relative;
+	top: 30px;
+	margin: auto;
+	height: auto;
+	background-color: transparent;
+}
+
+.footer-first-row {
+	height: 60px;
+	border-bottom: 1px solid white;
+	margin-bottom: 10px;
+}
+
+.footer-first-row nav {
+	position: relative;
+	display: inline-block;
+	transform: translateX(-50%);
+	left: 50%;
+}
+
+.footer-first-row nav ul {
+	display: inline-block;
+	list-style: none;
+	padding: 5px;
+	position: relative;
+	top: 0px;
+	background-color: transparent;
+}
+
+.footer-first-row nav ul li {
+	float: right;
+	padding: 0 20px;
+	background-color: transparent;
+	font-family: oswald;
+	font-size: 1.2em;
+	color: white;
+}
+
+.footer-first-row nav ul li a {
+	text-decoration: none;
+	color: white;
+	transition: 0.4s ease-in-out;
+}
+
+.footer-first-row nav ul li a:hover {
+	color: red;
+	text-shadow: 0px 0px 3px red;
+}
+
+.footer-border {
+	border-right: 1px solid white;
+}
+
+
+.footer-second-row {
+	margin-top: 10px;
+	font-family: oswald;
+	font-size: 1.2em;
+	color: white;
+	text-align: center;
+}
+
+.footer-second-row div {
+	padding: 5px;
+}
+
+
+

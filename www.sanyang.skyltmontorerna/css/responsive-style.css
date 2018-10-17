@@ -1,0 +1,258 @@
+@media only screen and (max-width: 400) {
+    .grid-item { 
+	    width: 49%; 
+	    margin: 0.5%;
+	}
+}
+
+@media only screen and (max-width: 800px) {
+    .grid-item { 
+	    width: 32%; 
+	    margin: calc(4%/3%);
+	}
+}
+
+@media only screen and (max-width: 1000px) {
+    .grid-item { 
+	    width: 24%; 
+	    margin: 0.5%;
+	}
+}
+
+@media only screen and (max-width: 1240px) {
+	
+	.wrap-content {
+		width: 100% !important;
+	}
+	
+	html {
+		background-color: white;
+		width: 100% !important;
+	}
+	
+	/*
+	*****************************************************
+	****** Google Maps Api
+	*****************************************************
+	*/
+	
+	.map-container {
+		position: relative;
+		top: 70px;
+	}
+	
+	.map-title  {
+		padding: 0%;
+		width: 100% !important;
+	}
+	
+	#map {
+		width: 95% !important;
+		height: 300px !important;
+	}
+	
+	/*
+	*****************************************************
+	****** Header
+	*****************************************************
+	*/
+	
+	header {
+		display: none;
+	}
+	
+	#second-container-index {
+		top: 70px !important;
+	}
+	
+	.header-rs {
+		display: block;
+		position: fixed;
+		background: -webkit-gradient(linear,left bottom,left top,color-stop(0.0,rgba(215, 215, 215, 1)),color-stop(1,rgba(255,255,255, 1)));;
+/* 		box-shadow: 0px 4px 5px -2px rgba(0,0,0,0.75); */
+		border-bottom: 5px solid black;
+		width: 100%;
+		height: 70px;
+		z-index: 2000;
+	}
+	
+	#rs-menu-icon {
+		height: 100%;
+		width: 70px;
+		float: left;
+		background-color: transparent;
+		background-image: url('../img/menu-icon.png');
+		background-position: center center;
+		background-size: cover;
+		background-repeat: no-repeat;
+		cursor: pointer;
+		outline: none;
+	}
+	
+	#rs-menu-overlay {
+		background: rgba(0, 0, 0, 0.9);
+		position: fixed;
+		width: 100%;
+		height: 0%;
+		z-index: 1000;
+		display: block;
+		overflow: hidden;
+	}
+	
+	#rs-menu-overlay nav {
+		display: block;
+		position: relative;
+		overflow: hidden;
+		height: 100%;
+		z-index: 1500;
+	}
+	
+	#rs-menu-overlay nav ul,
+	#rs-menu-overlay nav ul li {
+		list-style:disc;
+		list-style-type: disc;
+	}
+	
+	#rs-menu-overlay nav ul {
+		float: left;
+		width: 100vw;
+		height: auto;
+		background-color: transparent;
+	}
+	
+	#rs-menu-overlay nav ul li {
+		display: block;
+		padding: 15px 0px;
+		font-family: abel;
+		letter-spacing: 0.01em;
+		font-size: 2.5em;
+		text-align: center;
+		overflow: hidden;
+		background-color: transparent;
+		height: auto;
+	}
+	
+	#rs-menu-overlay nav ul li span {
+		background-color: transparent;
+		margin: auto;
+		display: block;
+	}
+	
+	#rs-menu-overlay nav ul li a,
+	#rs-menu-overlay nav ul li a:visited {
+		text-decoration: none;
+		color: white;
+		display: block;
+		width: 100%;
+	}
+	
+	/*
+	*****************************************************
+	****** Index
+	*****************************************************
+	*/
+	
+	#first-container-index {
+		height: 60vw;
+		top: 70px;
+	}
+	
+	.image-slide-content img {
+		width: 100% !important;
+	}
+	
+	
+	
+	/*
+	*****************************************************
+	****** Service
+	*****************************************************
+	*/
+	
+	#first-container-service {
+		top: 70px;
+	}
+	
+	#service-price-title {
+		width: 100%;
+	}
+	
+	/*
+	*****************************************************
+	****** Galleri
+	*****************************************************
+	*/
+	
+	.grid {
+		top: 75px;
+	}
+	
+	/*
+	*****************************************************
+	****** Contact
+	*****************************************************
+	*/
+	
+	#first-container-contact {
+		background-color: transparent;
+		overflow: visible;
+		top: 70px !important;
+	}
+	
+	#contact-detail-container {
+		width: 100%;
+		padding: 0%;
+	}
+	
+	#contact-info-content {
+		float: none !important;
+		width: 100%;
+		background-color: transparent;
+	}
+	
+	#contact-info-content ul {
+		background-color: transparent;
+		text-align: center;
+		width: 100%;
+		padding: 0px;
+	}
+	
+	#contact-info-content ul li {
+		padding: 5px 0px;
+	}
+	
+	#contact-form-content {
+		width: 100% !important;
+	}
+	
+	#contact-form-content form {
+		background-color: transparent;
+		width: 100%;
+		padding: 0px;
+	}
+	
+	#contact-form-content form input,
+	#contact-form-content button {
+		width: 100% !important;
+	}
+	
+	#contact-form-content form textarea {
+		max-width: 100%;
+		min-width: 100%;
+	}
+
+	
+	/*
+	*****************************************************
+	****** Footer
+	*****************************************************
+	*/
+	
+	footer {
+		top: 70px;
+		width: 100vw !important;
+	}
+	
+	
+	
+}

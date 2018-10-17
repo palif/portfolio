@@ -1,0 +1,274 @@
+@charset "UTF-8";
+
+@font-face {
+	font-family: abel;
+	src: url("../fonts/Abel-Regular.ttf");
+}
+
+@font-face {
+	font-family: permanentmarker;
+	src: url("../fonts/PermanentMarker.ttf");
+}
+
+@font-face {
+	font-family: oswald;
+	src: url("../fonts/oswald/oswald-light.ttf");
+}
+
+@font-face {
+	font-family: atomicage;
+	src: url("../fonts/AtomicAge-Regular.ttf");
+}
+
+@font-face {
+	font-family: opensanscondensed;
+	src: url("../fonts/OpenSansCondensed-Light.ttf");
+}
+
+@font-face {
+	font-family: marketdeco;
+	src: url("../fonts/marketdeco.ttf");
+}
+
+@font-face {
+	font-family: talldark;
+	src: url("../fonts/talldark.ttf");
+}
+
+
+@font-face {
+	font-family: monofonto;
+	src: url("fonts/monofonto.ttf");
+}
+
+/*******************************************************************
+********************************************************************
+******** CSS starts below!
+********************************************************************
+********************************************************************/
+
+/*******************************************************************
+********************************************************************
+******** File: login.jsp
+********************************************************************
+********************************************************************/
+
+.login_title {
+	font-size: 36px;
+	margin-top: 10vw;
+	margin-left: 30px;
+}
+
+.login_form {
+	background-color: transparent;
+	margin-left: 30px;
+	margin-top: 30px;
+}
+
+.login_title, .login_user, .login_password, .login_button, .login_input {
+	font-family: monofonto;
+}
+
+.login_user, .login_password {
+	font-size: 21px;
+	margin-bottom: 5px;
+}
+
+.login_input {
+	font-size: 21px;
+	height: 25px;
+	width: 300px;
+	outline: none;
+	border: none;
+	background-color: black;
+	color: white;
+}
+
+.login_button {
+	font-size: 24px;
+	border: none;
+	background-color: black;
+	color: white;
+	cursor: pointer;
+	transition: 0.2s ease-in-out;
+}
+
+.login_button:hover {
+	background-color: white;
+	color: black;
+}
+
+
+
+
+/*******************************************************************
+********************************************************************
+******** File: webshop.jsp
+********************************************************************
+********************************************************************/
+
+header {
+	border-bottom: 1px solid black;
+	font-family: monofonto;
+	height: 100px;
+	overflow: hidden;
+}
+
+#page_title {
+	position: relative;
+	top: 10px;
+	font-size: 36px;
+	padding: 15px;
+}
+
+#menu {
+	height: 30px;
+	width: 100%;
+	background-color: transparent;
+	overflow: hidden;
+}
+
+#cart {
+	text-align: center;
+	padding-top: 7px;
+	font-size: 18px;
+	background-color: pink;
+	width: 120px;
+	height: inherit;
+	letter-spacing: 0px;
+	float: right;
+}
+
+#cart a {
+	text-decoration: none;
+	color: black;
+}
+
+#container_item {
+	background-color: transparent;
+	padding: 50px 0px 0px;
+	height: auto;
+	width: 100%;
+	overflow: hidden;
+}
+
+.item_container {
+	background-color: transparent;
+	width: 100%;
+	height: 40px;
+	margin: 0px 0px 15px;
+	overflow: hidden;
+/* 	border-bottom: 1px solid black; */
+	padding-left: 15px;
+}
+
+.item_title, .item_price, .item_quantity, .item_button {
+	position: relative;
+	float: left;
+	background-color: transparent;
+	height: inherit;
+	font-family: monofonto;
+	margin-right: 15px;
+	overflow: hidden;
+	color: black;
+}
+
+.item_title {
+	padding-top:3px;
+	font-size: 26px;
+	font-style: bold;
+	width: 150px;
+}
+
+.item_price, .item_quantity {
+	font-size: 20px;
+	width: 80px;
+	text-align: right;
+}
+
+.item_price {
+	font-size: 20px;
+	padding-top: 8px;
+}
+
+.item_quantity {
+	padding-top: 12px;
+	font-size: 16px;
+	background-color: transparent;
+	padding-left: 8px;
+}
+
+.item_button {
+	border: none;
+	font-size: 16px;
+	cursor: pointer;
+	transition: 0.2s ease-in-out;
+}
+
+.item_button:hover {
+	background-color: black;
+	color: white;
+}
+
+footer {
+	height: 200px;
+	padding: 5px;
+	background-color: black;
+}
+
+footer nav {
+	font-family: monofonto;
+	color: black;
+	background-color: transparent;
+	padding-left: 15px;
+	overflow: hidden;
+}
+
+footer nav div {
+	background-color: transparent;
+	float: left;
+	margin-right: 10px;
+}
+
+footer nav div a {
+	text-decoration: underline;
+	color: white;
+}
+
+
+/*******************************************************************
+********************************************************************
+******** File: cart.jsp
+********************************************************************
+********************************************************************/
+
+#checkout {
+	font-size: 24px;
+	border: none;
+	font-family: monofonto;	
+	padding: 5px;
+	margin-left: 12px;
+	background-color: black;
+	color: white;
+	cursor: pointer;
+	transition: 0.2s ease-in-out;
+}
+
+#checkout:hover {
+	background-color: white;
+	color: black;
+}
+
+#container_checkout {
+	background-color: transparent;
+	padding: 50px 0px;
+	height: auto;
+	width: 100%;
+}
+
+
+
+
+
+
+

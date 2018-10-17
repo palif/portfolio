@@ -1,0 +1,93 @@
+<html>
+	
+	<head>
+		<meta charset="UTF-8">
+		<meta name="author" content="Pa Sanyang">
+		<meta name="description" content="Pa Sanyang website">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title> Hamudi hemsida | Skyltmontörerna </title>
+		<link rel="stylesheet" type="text/css" href="css/reset.css">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<link rel="stylesheet" type="text/css" href="icon/business-icons/font/flaticon.css">
+		<link rel="stylesheet" type="text/css" href="icon/social/font/flaticon.css">
+	    <script src="script/jquery-3.1.1.min.js"></script>
+	</head>	
+
+<body>
+	
+	<header> 
+		
+		<nav class="wrap-content" >
+			<div class="header-name-logo">
+				<span><a style="text-decoration: none; color: black" href="index.html">  HAMUDI: "Skyltmontörerna" </a></span>
+			</div>
+			<ul>
+				<li><a href="contact.html"> <span> <i class="icon-contact"> </i> KONTAKT </span> </a></li>
+				<li><a href="about-us.html"> <span> <i class="icon-about-us"> </i> OM OSS </span> </a></li>
+				<li><a href="gallery.php"> <span> <i class="icon-gallery"> </i> GALLERIA </span> </a></li>
+				<li><a href="service.html"> <span> <i class="icon-service"> </i> TJÄNSTER </span> </a></li>
+			</ul>
+		</nav>
+		
+	</header>	
+	
+	<div id="first-container-index" > 
+		<span class="wrap-content">
+		<i>"Hej vi är ett montage team med 4 montörer som har 14års erfarenhet inom skyltmontering. Vi monterar skyltar runt hela Sverige, även Skandinavien.
+Vi garanterar våra kunder de bäst uppsatta skyltar på fasaden, väggen, taket - det är bara att peka så fixar vi.
+Vi har även elbehörighet".</i><br><br>
+Har ni frågor är det bara vända er till informationssidan
+		</span>
+	</div>
+		
+	<div id="second-container-index" > 
+		<div id="map"></div>
+	    <script>
+	      function initMap() {
+	        var uluru = {lat: -25.363, lng: 131.044};
+	        var map = new google.maps.Map(document.getElementById('map'), {
+	          zoom: 4,
+	          center: uluru
+	        });
+	        var marker = new google.maps.Marker({
+	          position: uluru,
+	          map: map
+	        });
+	      }
+	    </script>
+	    <script async defer
+	    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDn_gO0kdjAIvjEAHAErYIzwP508ae-Slg&callback=initMap">
+	    </script>
+	</div>
+	
+	
+	
+	<footer> 
+		
+		<div class="footer-content wrap-content">
+			<div class="footer-first-row">
+				<nav>
+					<ul>
+						<li><a href="facebook.com" target="_blank"> <span> <i class="icon-facebook"> </i>  </span> </a></li>
+						<li><a href="twitter.com" target="_blank"> <span> <i class="icon-twitter"> </i>  </span> </a></li>
+						<li><a href="instagram.com" target="_blank"> <span> <i class="icon-instagram"> </i>  </span> </a></li>
+						<li><a href="google.com" target="_blank"> <span> <i class="icon-google"> </i>  </span> </a></li>
+					</ul>
+				</nav>
+				<div>
+					<ul>
+						
+					</ul>
+				</div>
+			</div>
+			<div class="footer-second-row">
+				<div><spa> Hamudi Skyltmontörerna AB </spa></div>
+				<div><spa> Copyright @ 2017 Sanyang Theme. All right is reserved. </spa></div>
+			</div>
+		</div>
+		
+	</footer>
+		
+</body>
+	
+</html>
