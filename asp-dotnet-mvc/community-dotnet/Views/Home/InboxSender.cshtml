@@ -1,0 +1,16 @@
+﻿@model InboxViewModel
+
+<h1>Inbox - selected user: <i>@Html.DisplayFor(model => model.SelectedSender)</i></h1>
+<div>
+    <table>
+        @foreach (var message in Model.SenderMessages)
+        {
+            <tr>
+                <td> meesage: @Html.DisplayFor(modelitem => message.TextMessage), </td>
+                <td> time: @Html.DisplayFor(modelitem => message.Timestamp), </td>
+                <td> is seen: @Html.DisplayFor(modelitem => message.IsSeen) </td>
+                <td> @Html.ActionLink(" Show", "InboxMessage", "Home", new { id = message.MessageId}) </td>
+            </tr>
+        }
+    </table>
+</div>

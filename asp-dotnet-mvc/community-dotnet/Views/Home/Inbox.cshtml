@@ -1,0 +1,20 @@
+﻿@model InboxViewModel
+
+<h1> Inbox </h1>
+
+<div>
+    Nr of messages : @Html.DisplayFor(model=> model.NumberOfMessages), Nr of unread message : @Html.DisplayFor(model=>model.NumberOfUnreadMessage)
+</div>
+
+<h3> Senders </h3>
+<div>
+    <table>
+        @foreach (var user in Model.AllSenderViewModel)
+        {
+            <tr>
+                <td>@Html.DisplayFor(modelitem => user.Username)</td>
+                <td>@Html.ActionLink("Select", "InboxSender", "Home", new { id = user.Username })</td>
+            </tr>
+        }
+    </table>
+</div>

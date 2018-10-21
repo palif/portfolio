@@ -1,0 +1,25 @@
+﻿@model SendViewModel
+<h2> Send a message </h2>
+<div>
+    <form method="post">
+        To
+        <input list="list" asp-for="To" />
+        <datalist id="list">
+            @foreach (var n in Model.ListOfContacts)
+            {
+                <option value="@n" />
+            }
+        </datalist>
+        <br />
+        From
+        <input type="email" asp-for="From" /> <br />
+        Message
+        <input type="text" asp-for="Message" /> <br />
+        <button type="submit"> Send </button>
+    </form>
+</div>
+
+@if (ViewData["SentMessageInfo"] != null)
+{
+<div style="font-size: 10px;"> @ViewData["SentMessageInfo"] </div>
+}

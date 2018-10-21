@@ -1,0 +1,12 @@
+﻿@model InboxViewModel
+
+<h1>Inbox - Message by <i>@Html.DisplayFor(model => model.SelectedMessage.FromUser.Username)</i></h1>
+<div>
+    @{ var message = Model.SelectedMessage; }
+    <form asp-action="InboxDelete" asp-controller="Home" method="post">
+        <label> @Html.DisplayFor(modelitem => message.TextMessage) </label>
+        <input type="hidden" value="@message.MessageId" name="id" />
+        <button type="submit"> Delete </button>
+    </form>
+
+</div>
