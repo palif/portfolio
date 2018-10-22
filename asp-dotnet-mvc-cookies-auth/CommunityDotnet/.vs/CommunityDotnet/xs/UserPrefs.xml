@@ -1,0 +1,17 @@
+﻿<Properties StartupConfiguration="{C8BBFED8-BF90-4F6B-8B55-88CBFB56CE85}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Views/Account/Register.cshtml">
+    <Files>
+      <File FileName="Views/Account/Login.cshtml" Line="18" Column="69" />
+      <File FileName="Views/Home/InboxSender.cshtml" Line="12" Column="102" />
+      <File FileName="Controllers/AccountController.cs" Line="89" Column="43" />
+      <File FileName="Views/Account/Register.cshtml" Line="14" Column="13" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.CommunityDotnet PreferredExecutionTarget="MonoDevelop.Default" />
+</Properties>

@@ -1,0 +1,16 @@
+﻿@model RegisterViewModel
+
+<div>
+    <h2> Register here! </h2>
+    <form asp-controller="Account" method="post">
+        <span>Username: </span> <br />
+        <input asp-for="Username" type="text" /> <br />
+        <span>Password: </span> <br />
+        <input asp-for="Password" type="password" /> <br />
+        <button type="submit"> Register </button>
+    </form>
+    @if (ViewData["FailedRegister"] != null)
+    {
+    <div style="font-size: 10px;"> @ViewData["FailedRegister"] </div>
+    }
+</div>
