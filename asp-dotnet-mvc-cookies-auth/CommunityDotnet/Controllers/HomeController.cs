@@ -27,6 +27,7 @@ namespace CommunityDotnet.Controllers
             var mail = HttpContext.User?.Identity?.Name;
             ViewData["User"] = mail;
             User user = model.GetUser(mail);
+            ViewData["LatestLogin"] = user.LatestLogin;
             ViewData["NrOfLoginsMonth"] = user.NumberOfLoginsInMonth;
             ViewData["NrOfMessagesSent"] = user.NumberOfMessageSent;
             ViewData["NrOfMessagesRecv"] = model.GetInbox(mail).Count;
@@ -147,7 +148,7 @@ namespace CommunityDotnet.Controllers
             {
                 TextMessage = sendViewModel.Message,
                 ToUser = new User { Username = sendViewModel.To },
-                FromUser = new User {Username = sendViewModel.From }
+                FromUser = new User {Username = HttpContext.User?.Identity?.Name}
             };
 
             Console.WriteLine(message);
@@ -164,7 +165,7 @@ namespace CommunityDotnet.Controllers
                     list.Add(u.Username);
                 }
                 svm.ListOfContacts = list;
-                sendViewModel.From = HttpContext.User?.Identity?.Name;
+                svm.From = HttpContext.User?.Identity?.Name;
                 return View(svm);
             }
 
@@ -179,7 +180,7 @@ namespace CommunityDotnet.Controllers
                 _list.Add(u.Username);
             }
             _svm.ListOfContacts = _list;
-            sendViewModel.From = HttpContext.User?.Identity?.Name;
+            _svm.From = HttpContext.User?.Identity?.Name;
             return View(_svm);
         }
 

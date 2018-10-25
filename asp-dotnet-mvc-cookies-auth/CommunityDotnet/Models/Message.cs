@@ -1,6 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-
 namespace CommunityDotnet.Models
 {
     public class Message
@@ -14,8 +12,8 @@ namespace CommunityDotnet.Models
 
         public override string ToString()
         {
-            return MessageId + ", Timestamp: " + Timestamp + ", From: " + FromUser.Username + ", To: " 
-            + ToUser.Username + ", Message: \n" + this.TextMessage;
+            return "From: " + FromUser.Username + ", To: " + ToUser.Username 
+                      + ", Message: \n" + this.TextMessage + ", Time: " + DateTime.Now.ToString();
         }
     }
 }

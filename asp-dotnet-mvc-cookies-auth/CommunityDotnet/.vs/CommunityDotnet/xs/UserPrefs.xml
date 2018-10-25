@@ -1,10 +1,12 @@
 ﻿<Properties StartupConfiguration="{C8BBFED8-BF90-4F6B-8B55-88CBFB56CE85}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Views/Account/Register.cshtml">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Controllers/HomeController.cs">
     <Files>
-      <File FileName="Views/Account/Login.cshtml" Line="18" Column="69" />
-      <File FileName="Views/Home/InboxSender.cshtml" Line="12" Column="102" />
-      <File FileName="Controllers/AccountController.cs" Line="89" Column="43" />
-      <File FileName="Views/Account/Register.cshtml" Line="14" Column="13" />
+      <File FileName="Views/Home/Send.cshtml" Line="1" Column="1" />
+      <File FileName="ViewModels/SendViewModel.cs" Line="19" Column="1" />
+      <File FileName="Controllers/HomeController.cs" Line="131" Column="13" />
+      <File FileName="Models/Model.cs" Line="146" Column="97" />
+      <File FileName="Controllers/AccountController.cs" Line="29" Column="28" />
+      <File FileName="Data/CommunityDbContext.cs" Line="2" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />

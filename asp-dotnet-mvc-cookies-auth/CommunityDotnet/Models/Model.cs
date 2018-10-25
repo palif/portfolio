@@ -98,11 +98,12 @@ namespace CommunityDotnet.Models
                     registerUser.Username = user.Username;
                     registerUser.Password = user.Password;
 
+                    Console.WriteLine("\tTrying to register '" + registerUser.Username + "'...");
                     db.Users.Add(registerUser);
 
                     db.SaveChanges();
 
-                    Console.WriteLine("..User registration succesful.");
+                    Console.WriteLine("..User registration completed.");
                     return true;
 
                 }            
@@ -142,7 +143,7 @@ namespace CommunityDotnet.Models
                     message.Timestamp = DateTime.Now + "";
                     message.TextMessage = m.TextMessage;
 
-                    Console.WriteLine(message.FromUser + ", " + message.ToUser + ", " + message.TextMessage);
+                    Console.WriteLine(message.FromUser.Username + ", " + message.ToUser.Username + ", " + message.TextMessage);
 
                     db.Messages.Add(message);
                     
@@ -308,11 +309,6 @@ namespace CommunityDotnet.Models
                              && m.FromUser.Username == sender_username  select m)
                     .Include(f => f.FromUser).Include(t => t.ToUser).ToList();
 
-                //foreach ( var i in query){
-                //    if(i.FromUser != null) 
-                //        Console.WriteLine("MESSAGE -> FROM: " + i.FromUser.Username + ", TO: " + i.ToUser);
-                //}
-
                 Console.WriteLine("\n\nStarting getting inbox..");
 
                 foreach (var item in query)
@@ -352,7 +348,7 @@ namespace CommunityDotnet.Models
 
         public List<User> GetAllInboxSenders(string username) 
         {
-
+            Console.WriteLine("Going to load all " + username + "'s senders..");
             List<User> senderList = new List<User>();
 
             User user = new User
@@ -371,9 +367,11 @@ namespace CommunityDotnet.Models
                 {
                     Username = item.Username
                 };
+                Console.WriteLine("\tUser '" + fromUser.Username + "' is added.");
                 senderList.Add(fromUser);
             }
 
+            Console.WriteLine("..loading.");
             return senderList;
         }
 
@@ -438,6 +436,7 @@ namespace CommunityDotnet.Models
 
         public List<User> GetListOfAllUser()
         {
+            Console.WriteLine("Preparing to add Users to the list..");
             List<User> list = new List<User>();
 
             using (var db = new CommunityDbContext())
@@ -455,9 +454,11 @@ namespace CommunityDotnet.Models
                         NumberOfUnreadMessages = item.NumberOfUnreadMessages
                     };
                     list.Add(user);
-
+                    Console.WriteLine("\tUser '" + user.Username + "' is added to the list.");
                 }
             }
+
+            Console.WriteLine("..Users are succesful added to the list.");
             return list;
         }
 

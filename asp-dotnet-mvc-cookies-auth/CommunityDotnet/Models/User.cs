@@ -1,4 +1,4 @@
-﻿using System;
+﻿
 namespace CommunityDotnet.Models
 {
     public class User
